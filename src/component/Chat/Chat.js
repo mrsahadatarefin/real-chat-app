@@ -24,7 +24,7 @@ const Chat = () => {
 
         socket= socketIo(ENDPOINR,{transports:['websocket']})
         socket.on('connect',()=>{
-            alert('connected')
+            
             setId(socket.id)
         })
         socket.emit('joined',{user})
@@ -77,7 +77,7 @@ console.log(data.user,data.message,data.id)
 
           
             <div className='inputBox'>
-                <input type="text" id='chatInput' />
+                <input onKeyPress={(e)=> e.key==='Enter'?send():null} type="text" id='chatInput' />
                 <button onClick={send} className='sendBtn'> <img src={sendLogo} alt=""  /></button>
         </div>
     </div>
