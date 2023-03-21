@@ -3,7 +3,7 @@ import {user} from "../Join/Join"
 import socketIo from 'socket.io-client'
 import './Chat.css'
 import ReactScrollTOBottom from 'react-scroll-to-bottom'
-
+import closeIcon from '../../images/closeIcon.png'
 import sendLogo from '../../images/send.png'
 import Message from '../message/Message';
 const ENDPOINR ='http://localhost:5000/'
@@ -66,7 +66,8 @@ console.log(data.user,data.message,data.id)
 
         <div className='header'>
             
-          
+           <h2> Super Chat</h2>
+           <a href="/"><img src={closeIcon} alt=""  /></a>
 
 
             </div>

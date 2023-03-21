@@ -1,3 +1,90 @@
 body{
   margin: 0;
 }
+
+@media(max-aspect-ratio:7/10){
+
+  .joinPage{
+   
+   
+    display: flex;
+    align-items: flex-start !important;
+    justify-content: center;
+}
+
+  .joinContainer{
+  margin-top: 30vw !important;
+    width: 100% !important;
+   
+    
+
+  }
+
+  .joinContainer > img{
+    width:30vmax !important;
+}
+.joinContainer > h1{
+
+font-size: 6vw !important ;
+width: 65vw !important;
+border-bottom: 0.6vw solid white !important;
+
+
+padding:0.6vw !important ;
+}
+#joinInput{
+  width: 65vw !important;
+  padding:4vw !important;
+  
+  font-size: 6vw !important;
+  margin: 5vw !important;
+  
+}
+.joinbtn{
+  width: 65vw !important;
+  padding:4vw !important;
+ 
+  background-color: crimson;
+  font-size: 6vw !important;
+  
+  
+}
+.chatContainer{
+  background-color: white;
+  height: 100% !important;
+  width: 100% !important;
+ 
+}
+.header{
+   
+  height: 10% !important;
+ 
+
+}
+.header >h2{
+  font-size:1.5vmax ;
+  margin: 5vw !important;
+}
+.header img{
+margin: 6vw;
+transform: scale(2) !important;
+}
+.header >img:hover{
+  transform: scale(3.2) !important;
+  
+}
+.chatBox{
+    
+  height: 80% !important;
+  
+
+}
+.inputBox{
+  border-top:0.1vmax solid black ;
+  height: 10%;
+  box-sizing:border-box ;
+  display: flex;
+
+}
+
+}
