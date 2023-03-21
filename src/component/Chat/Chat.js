@@ -6,7 +6,7 @@ import ReactScrollTOBottom from 'react-scroll-to-bottom'
 import closeIcon from '../../images/closeIcon.png'
 import sendLogo from '../../images/send.png'
 import Message from '../message/Message';
-const ENDPOINR ='https://real-chat-server-eight.vercel.app/'
+const ENDPOINR ='http://localhost:5000/'
 
 let socket;
 const Chat = () => {
